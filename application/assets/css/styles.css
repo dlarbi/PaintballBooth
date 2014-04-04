@@ -1,0 +1,76 @@
+
+/* TOP NAVIGATION */
+.topNavBar {width:100%; background: #45484d; /* Old browsers */
+		background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #45484d 0%,#000000 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #45484d 0%,#000000 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+		height: 50px;
+}
+
+#loginButton {margin: 10px; }
+#loginForm {top:21.5%;transition:all .3s ;position:absolute; padding:10px;width:430px; background:#fff; left:50%; margin-left:-225px;  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.3);-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;}
+#loginForm input[type="text"] {margin:10px; padding:14px;}
+#loginForm input[type="password"] {margin:10px; padding:14px;}
+#loginForm form {margin:0;}
+
+/* STYLES FOR INDEX PAGE */
+#homeVideoWrapper {position:relative; width:100%; height:500px; overflow:hidden;background:#000;}
+#homeVideo {position:absolute;  width:100%; min-height:100%;}
+
+#homeRegisterBox {top:41.5%;bottom:30%;transition:all .3s ;position:absolute; padding:20px;width:410px; background:url('/application/assets/media/images/blacktransparent.png') repeat; left:50%; margin-left:-225px;  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.3);-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px; text-align:center;}
+.registerBoxMarginChange { top:20%!important; bottom:55%!important;box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0)!important;
+-moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0)!important;
+-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0)!important;background:none!important;}
+#homeRegisterBox h1 {font-size: 25px; color:#fff; margin:0 0 10px 0;}
+
+#homeRegisterFormWrapper {}
+#homeRegisterForm {text-align:left; width:60%; display:block; margin:0 auto;}
+#homeRegisterForm .form-horizontal .control-label {width:auto;}
+#homeRegisterForm .controls {margin-left:90px;}
+#homeRegisterForm .control-group {margin-bottom:10px;}
+#homeRegisterform input[type="text"], input[type="password"] {width:150px;}
+#homeRegisterForm label {color:#eeee98;}
+#homeRegisterButton {width:155%; margin-left:-58%;}
+
+#homeDescriptionWrapper {width:100%;height:500px;box-shadow: 0px 0px 70px 4px rgba(0, 0, 0, 0.75);-moz-box-shadow: 0px 0px 70px 4px rgba(0, 0, 0, 0.75);-webkit-box-shadow: 0px 0px 70px 4px rgba(0, 0, 0, 0.75); position: relative;padding: 40px 0;}
+#homeDescriptionWrapper .container {border-top:1px solid #ddd; padding:30px 0;}
+.homeCalloutImage {margin: 0 auto; display:block; width:120px;}
+
+/* DASHBOARD */
+#dashboardCenterWrapper {width: 64%;padding: .5%;margin: 0 20%;position: relative;}
+#leftDashboardSidebar {width:20%; position:fixed; border-right:1px solid #ccc; left:0; top:50px;background:#fff;}
+#rightDashboardSidebar {border-left:1px solid #ccc;  background:#fff;position:fixed; right:0; top:50px;width:15%;}
+
+/* WIDGETS */
+#nearbyPlayersWidget {position:relative; padding:3%; }
+#nearbyPlayersWidget h5{margin:0px 0 5px 0;}
+.nearbyPlayerCell {margin:10px 0 0 0; }
+.userListName {margin:0 0 5px 0;}
+
+
+#profileMiniWidget {padding:2%;float:left; width:96%; position:relative;}
+#profileMiniWidget h5 {margin:0 0 8px 0;}
+#profileMiniWidget #profileThumbnail {width:30%;  float:left;}
+#profileMiniWidget #miniData {width:70%;float:left;font-size:12px;margin:0px;}
+
+#editProfileWidget {padding: 0 5px;}
+#editProfileWidget h3 {color:#666;}
+
+
+@media (max-width: 1100px) {
+	#homeVideoWrapper {height:300px;}
+	#homeRegisterBox {bottom:21%;}
+	#loginForm {top:10%;}
+}
