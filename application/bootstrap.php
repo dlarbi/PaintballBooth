@@ -11,7 +11,7 @@ require('application/includes/classes/view/view.php');
 
 //DB CONNECTION
 try {
-	$db = new PDO( "mysql:host=www.paintballbooth.com;dbname=paintb10_main", 'paintb10', 'postal9curse$swan' );
+	$db = new PDO( "mysql:host=www.paintballbooth.com;dbname=EXAMPLE", 'EXAMPLE', 'EXAMPLE' );
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
 	echo 'ERROR: ' . $e->getMessage();
