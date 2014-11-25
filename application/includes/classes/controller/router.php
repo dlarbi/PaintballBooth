@@ -2,10 +2,10 @@
 
 class router {	
 	// $pathargs is the array of arguments from the URI
-	public $pathargs;
+	private $pathargs;
 	// $modelfactory is first passed here, and then passed to the controller chosen by the router.
-	public $modelfactory;
-	public $auth;
+	private $modelfactory;
+	private $auth;
 
 	function __construct($pathargs, $modelfactory, array $auth) {
 		$this->pathargs = $pathargs;
@@ -78,11 +78,16 @@ class router {
 
 			if($this->pathargs[0] == 'booth') {				
 				if(count($this->pathargs) > 3) {									
-					header('Location: http://www.paintballbooth.com');					
-					die();			
-				} elseif(in_array($this->pathargs[1], $reservedpages) == false) {				
-					$boothname = $this->pathargs[1];
-					$initializedcontroller->load_booth();				
+					header('Location: http://www.paintballbooth.com');					
+
+					die();			
+
+				} elseif(in_array($this->pathargs[1], $reservedpages) == false) {				
+
+					$boothname = $this->pathargs[1];
+
+					$initializedcontroller->load_booth();				
+
 				} elseif($this->pathargs[1] == 'create_booth') {
 					$initializedcontroller->create_booth();
 				}
